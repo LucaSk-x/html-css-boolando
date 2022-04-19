@@ -9,6 +9,7 @@
 .container {
     max-width: 60rem;
     margin: auto;
+    padding: 1rem;
 
 }
 
@@ -19,6 +20,13 @@ header {
 header .d-flex {
     display: flex;
     justify-content: space-between;
+    padding: 1rem;
+}
+
+.d-flex-main {
+    display: flex;
+    gap: 0.5rem;
+    flex-basis: calc((100% - 2rem) / 3);
 }
 
 .nav-left a {
@@ -27,9 +35,117 @@ header .d-flex {
 }
 
 .logo-hd img{
-    width: 15%;
+    width: 6rem;
 }
 
 .nav-right {
     color: white;
 }
+
+.product-image {
+    flex-grow: 1;
+    position: relative;
+} 
+
+.product-image img {
+    width: 100%;
+}
+
+.third img {
+    width: 315px;
+}
+
+.name-product {
+    font-size: 0.8rem;
+    color: grey;
+}
+
+.descrition-product {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+}
+
+.price-product {
+    font-size: 0.8rem;
+    color: red;
+    display: inline-block;
+}
+
+.discount-product {
+    font-size: 0.8rem;
+    text-decoration: line-through;
+    display: inline-block;
+}
+
+.product-image:hover .product-image-hover {
+    display: inline-block;
+}
+
+.product-image:hover .product-image-default {
+    display: none;
+}
+
+.product-image-hover {
+    display: none;
+}
+
+.over-info-product {
+    position: absolute;
+    bottom: 100px;
+    color: white;
+}
+
+.product-discount, .product-sustain {
+    display: inline-block;
+    padding: 0.3rem 0.9rem;
+    font-size: .8rem;
+    font-weight: 600;
+}
+
+.product-discount {
+    background-color: red;
+}
+
+.product-sustain {
+    background-color: green;
+}
+
+.d-flex-footer {
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: #1A1A1A;
+    color: white;
+}
+
+.footer-left h3 {
+    padding: 1rem 0;
+}
+
+.nav-footer a {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: white;
+    padding-right: 0.3rem;
+}
+
+.d-flex-icon {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.found-us {
+    padding: 0.5rem 0;
+}
+
+.icon-social i {
+    background-color: white;
+    color: #1A1A1A;
+    border-radius: 0.2rem;
+    padding: 0.2rem;
+}
+
